@@ -3,12 +3,19 @@ import Footer from './components/Footer/Footer';
 import Artwork from './components/Artwork/Artwork';
 import Caption from './components/Caption/Caption';
 import './App.css'
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log(data);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % data.length);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, []);
 
-  const displayData = data[0];
+  const displayData = data[currentIndex];
 
   return (
     <>

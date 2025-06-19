@@ -14,6 +14,13 @@ const data: Relationship[] = [
     description: "Using Midjourney to create mock screenshots of videogames",
     prompt: "Screenshot from Silent Hill 2 --style raw --v 6.1 --stylize 50"
   },
+  {
+    id: crypto.randomUUID(),
+    artwork: 'hortfrancis_Gooey_--stylize_50_--v_6_31bfff2e-5158-4249-b4da-bee91f289e4c.png',
+    description: "Gooey ... (Midjourney)",
+    prompt: "Gooey --stylize 50 --v 6"
+  },
+
 
 ];
 
