@@ -1,0 +1,22 @@
+.Caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5vh;
+  font-size: 2.5vh;
+  padding-left: 5vw;
+
+  .description {
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 60vw;
+    color: darkslategray;
+  }
+
+  .prompt {
+    font-family: "Cascadia Code", monospace;
+    font-size: 2vh;
+    color: rgb(102, 102, 102);
+  }
+}

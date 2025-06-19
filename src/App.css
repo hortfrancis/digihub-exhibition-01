@@ -1,0 +1,27 @@
+.App {
+  background: ghostwhite;
+
+  width: 100vw;
+  min-height: 100dvh;
+
+  .layout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+
+    height: 90vh;
+
+    padding: 5vh;
+
+    /* Flex children sizing */
+    &>* {
+      flex: 1;
+    }
+
+    &>*:first-child {
+      flex: 0 0 30%;
+    }
+  }
+}
