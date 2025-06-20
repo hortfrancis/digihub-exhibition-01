@@ -6,6 +6,9 @@ import './App.css'
 import { useState, useEffect } from 'react';
 
 function App() {
+
+  console.log(data);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -17,11 +20,18 @@ function App() {
 
   const displayData = data[currentIndex];
 
+  const prevIndex = () => setCurrentIndex(prev => (prev - 1 + data.length) % data.length);
+  const nextIndex = () => setCurrentIndex(prev => (prev + 1) % data.length);
+
   return (
     <>
       <div className='App'>
+        <div className='controls'>
+          <button className='nav-button left' onClick={prevIndex}>&lt;</button>
+          <button className='nav-button right' onClick={nextIndex}>&gt;</button>
+        </div>
         <main className='layout-container'>
-          <Caption description={displayData.description} prompt={displayData.prompt} />
+          <Caption description={displayData.description} prompts={displayData.prompts} />
           <Artwork filename={displayData.artwork} />
         </main>
         <Footer />

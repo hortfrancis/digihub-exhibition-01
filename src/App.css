@@ -24,4 +24,27 @@
       flex: 0 0 30%;
     }
   }
+
+  .controls {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5vh;
+    display: flex;
+    gap: 1vh;
+
+    button {
+
+      background: ghostwhite;
+      border: none;
+
+      font-size: 3vh;
+      cursor: pointer;
+
+      &:hover {
+        background: lightgrey;
+      }
+
+    }
+  }
 }

@@ -2,20 +2,24 @@ import './Caption.css';
 
 interface CaptionProps {
   description: string;
-  prompt?: string; // Optional prop for the prompt text
+  prompts?: string[];
 }
 
 export default function Caption({
   description,
-  prompt
+  prompts = [],
 }: CaptionProps) {
   return (
     <div className='Caption'>
       <div className='description'>
         {description}
       </div>
-      <div className='prompt'>
-        {prompt}
+      <div className='prompts'>
+        {prompts.map((prompt, index) => (
+          <div key={index} className='prompt-item'>
+            {prompt}
+          </div>
+        ))}
       </div>
     </div >
   );
