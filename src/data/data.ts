@@ -10,10 +10,13 @@ type Relationship = {
 const data: Relationship[] = [
   {
     id: crypto.randomUUID(),
-    artwork: 'hortfrancis_Screenshot_from_Silent_Hill_2_--raw_--stylize_50_--_8c243a88-b5bd-4bde-8435-e3840f662264.png',
-    description: "Using Midjourney to create mock screenshots of videogames",
-    prompts: ["Screenshot from Silent Hill 2 --style raw --v 6.1 --stylize 50"]
+    artwork: 'hortfrancis_Suprematism_Brutalism_geometric_glitch_art_bright_36a7e07c-86e6-43c7-b6c1-31998a770ea7_0.png',
+    description: "A kind of metamodern Suprematism? (Midjourney)",
+    prompts: [
+      `Suprematism, Brutalism, geometric glitch art, bright, garish, vibrant. --v 5.2`
+    ]
   },
+
   {
     id: crypto.randomUUID(),
     artwork: 'hortfrancis_Gooey_--stylize_50_--v_6_31bfff2e-5158-4249-b4da-bee91f289e4c.png',
@@ -123,7 +126,7 @@ const data: Relationship[] = [
   },
   {
     id: crypto.randomUUID(),
-    artwork: 'A black and white vintage photograph of an architectural space that is an underground parking garage made out of concrete slabs with two rows of columns in the middle, designed in the style of Louis Kahn, featuring brutalist architecture and minimalism. --ar 70:71 --style raw --stylize 50 --v 6.1',
+    artwork: 'hortfrancis_Harbour_with_brutalist_monolith_soaks_evening_lig_3349d387-184b-4d88-b28e-34ae4619a29e_3.png',
     description: "Oil painting 'brushstrokes' (Midjourney). Capturing light was always important ..",
     prompts: [
       `Harbour with brutalist monolith soaks evening light --v 6 --stylize 50`
@@ -131,11 +134,9 @@ const data: Relationship[] = [
   },
   {
     id: crypto.randomUUID(),
-    artwork: 'hortfrancis_Suprematism_Brutalism_geometric_glitch_art_bright_36a7e07c-86e6-43c7-b6c1-31998a770ea7_0.png',
-    description: "A kind of metamodern Suprematism? (Midjourney)",
-    prompts: [
-      `Suprematism, Brutalism, geometric glitch art, bright, garish, vibrant. --v 5.2`
-    ]
+    artwork: 'hortfrancis_Screenshot_from_Silent_Hill_2_--raw_--stylize_50_--_8c243a88-b5bd-4bde-8435-e3840f662264.png',
+    description: "Using Midjourney to create mock screenshots of videogames",
+    prompts: ["Screenshot from Silent Hill 2 --style raw --v 6.1 --stylize 50"]
   },
   {
     id: crypto.randomUUID(),
